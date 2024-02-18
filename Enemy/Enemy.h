@@ -10,11 +10,13 @@
 class Enemy: public Character{
 private:
     int experience;
+    int attackDamage;
 public:
     Enemy(string _name, int _health, int _attack, int _defense, int _speed, int _experience);
     void doAttack(Character *target) override;
     void takeDamage(int damage) override;
     int getExperience();
+    int getAttackDamage();
 };
 
 

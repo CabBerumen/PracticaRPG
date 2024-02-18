@@ -10,7 +10,11 @@ Player::Player(string _name, int _health, int _attack, int _defense, int _speed)
 }
 
 void Player::doAttack(Character *target) {
-    target->takeDamage(attack);
+    attackDamage = attack;
+    target->takeDamage(attackDamage);
+}
+int Player::getAttackDamage() {
+    return attackDamage;
 }
 
 void Player::takeDamage(int damage) {

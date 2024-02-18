@@ -14,7 +14,11 @@ Enemy::Enemy(string _name, int _health, int _attack, int _defense, int _speed, i
 }
 
 void Enemy::doAttack(Character *target) {
-    target->takeDamage(getRolledAttack(attack));
+    attackDamage = getRolledAttack(attack);
+    target->takeDamage(attackDamage);
+}
+int Enemy::getAttackDamage() {
+    return attackDamage;
 }
 
 void Enemy::takeDamage(int damage) {
