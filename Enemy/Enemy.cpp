@@ -22,9 +22,12 @@ int Enemy::getAttackDamage() {
 }
 
 void Enemy::takeDamage(int damage) {
-    int trueDamage = damage - defense;
+    trueDamage = damage - defense;
 
     health-= trueDamage;
+}
+int Enemy::getTrueDamage(){
+    return trueDamage;
 }
 
 int Enemy::getExperience() {

@@ -18,9 +18,12 @@ int Player::getAttackDamage() {
 }
 
 void Player::takeDamage(int damage) {
-    int trueDamage = damage - defense;
+    trueDamage = damage - defense;
 
     health-= trueDamage;
+}
+int Player::getTrueDamage() {
+    return trueDamage;
 }
 
 void Player::levelUp() {

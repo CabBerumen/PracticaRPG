@@ -13,6 +13,7 @@ private:
     int level;
     int experience;
     int attackDamage;
+    int trueDamage;
 
     void levelUp();
 public:
@@ -20,6 +21,7 @@ public:
     void doAttack(Character *target) override;
     void takeDamage(int damage) override;
     int getAttackDamage();
+    int getTrueDamage();
 
     void gainExperience(int exp);
     //TODO: Implement use object

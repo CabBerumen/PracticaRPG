@@ -4,9 +4,10 @@
 
 int main() {
     Player *player = new Player("Rhaenyra", 100, 8, 4, 10);
-    Enemy *enemy = new Enemy("Aegon II", 100, 8,4 , 5, 10);
+    Enemy *enemy = new Enemy("Aegon II", 100, 6,4 , 5, 10);
     int round = 1;
     int doneDamage;
+    int TrueDamage;
 
     cout << player->toString() << endl;
     cout << "---------------" << endl;
@@ -18,13 +19,15 @@ int main() {
         cout << "Round: " << round << ": " << endl;
 
         player->doAttack(enemy);
-        doneDamage = player->getAttackDamage();
-        cout << player->getName() << " ataco con: " << doneDamage << " de dano a: " << enemy->getName() << " || Salud de " << enemy->getName() << ": " << enemy->getHealth() << endl;
+        //doneDamage = player->getAttackDamage();
+        TrueDamage = enemy -> getTrueDamage(); // Obtiene el verdadero daño obtenido
+        cout << player->getName() << " ataco con: " << TrueDamage << " de dano a: " << enemy->getName() << " || Salud de " << enemy->getName() << ": " << enemy->getHealth() << endl;
 
         if (enemy-> getHealth() > 0){
             enemy ->doAttack(player);
-            doneDamage = enemy->getAttackDamage();
-            cout << enemy->getName() << " ataco con: " << doneDamage << " de dano a: " << player->getName() << " || Salud de " << player->getName() << ": " << player->getHealth() << endl;
+            //doneDamage = enemy->getAttackDamage();
+            TrueDamage = player -> getTrueDamage();
+            cout << enemy->getName() << " ataco con: " << TrueDamage << " de dano a: " << player->getName() << " || Salud de " << player->getName() << ": " << player->getHealth() << endl;
 
         }
         round ++;
