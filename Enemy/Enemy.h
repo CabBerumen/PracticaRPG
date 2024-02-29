@@ -6,6 +6,11 @@
 #define RPG_ENEMY_H
 
 #include "../Character/Character.h"
+#include "../Player/Player.h"
+#include <vector>
+#include "../Utils.h"
+#include "Enemy.h"
+#pragma once
 
 class Enemy: public Character{
 private:
@@ -18,6 +23,9 @@ public:
     void takeDamage(int damage) override;
     int getExperience();
     int getAttackDamage();
+
+    Character* selectTarget(vector<Player*> possibleTargets);
+
     int getTrueDamage();
 };
 

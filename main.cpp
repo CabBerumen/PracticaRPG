@@ -1,10 +1,13 @@
 #include <iostream>
 #include "Player/Player.h"
 #include "Enemy/Enemy.h"
+#include "Combat/Combat.h"
 
 int main() {
-    Player *player = new Player("Rhaenyra", 100, 8, 4, 10);
-    Enemy *enemy = new Enemy("Aegon II", 100, 6,4 , 5, 10);
+    Player *player = new Player("Bocchi", 100, 8, 4, 10);
+    Enemy *enemy = new Enemy("Noel", 100, 6,4 , 5, 10);
+    Enemy *enemy2 = new Enemy("Orc", 15, 6, 2, 5, 10);
+
     int round = 1;
     int doneDamage;
     int TrueDamage;
@@ -14,6 +17,16 @@ int main() {
     cout << enemy->toString() << endl;
 
     cout << "=====================" << endl;
+
+    vector<Character*> participants;
+
+    participants.push_back(player);
+    participants.push_back(enemy);
+    participants.push_back(enemy2);
+
+    Combat *combat = new Combat(participants);
+    combat->doCombat();
+
 
     while (player -> getHealth() > 0 && enemy -> getHealth() > 0){
         cout << "Round: " << round << ": " << endl;
@@ -49,5 +62,6 @@ int main() {
 
     delete player;
     delete enemy;
+    delete combat;
     return 0;
 }

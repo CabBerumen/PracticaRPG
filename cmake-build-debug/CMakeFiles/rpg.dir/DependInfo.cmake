@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/cbeww/Documents/TAREAS/POO/PracticaRPG/Character/Character.cpp" "CMakeFiles/rpg.dir/Character/Character.cpp.obj" "gcc" "CMakeFiles/rpg.dir/Character/Character.cpp.obj.d"
+  "C:/Users/cbeww/Documents/TAREAS/POO/PracticaRPG/Combat/Combat.cpp" "CMakeFiles/rpg.dir/Combat/Combat.cpp.obj" "gcc" "CMakeFiles/rpg.dir/Combat/Combat.cpp.obj.d"
   "C:/Users/cbeww/Documents/TAREAS/POO/PracticaRPG/Enemy/Enemy.cpp" "CMakeFiles/rpg.dir/Enemy/Enemy.cpp.obj" "gcc" "CMakeFiles/rpg.dir/Enemy/Enemy.cpp.obj.d"
   "C:/Users/cbeww/Documents/TAREAS/POO/PracticaRPG/Player/Player.cpp" "CMakeFiles/rpg.dir/Player/Player.cpp.obj" "gcc" "CMakeFiles/rpg.dir/Player/Player.cpp.obj.d"
   "C:/Users/cbeww/Documents/TAREAS/POO/PracticaRPG/main.cpp" "CMakeFiles/rpg.dir/main.cpp.obj" "gcc" "CMakeFiles/rpg.dir/main.cpp.obj.d"

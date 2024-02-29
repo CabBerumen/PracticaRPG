@@ -5,6 +5,9 @@
 #ifndef RPG_PLAYER_H
 #define RPG_PLAYER_H
 #include "../Character/Character.h"
+#include "../Enemy/Enemy.h"
+#include <vector>
+
 
 class Player: public Character {
     //TODO: Implement Classes (Mage, Warrior, Rogue, etc..)
@@ -22,6 +25,8 @@ public:
     void takeDamage(int damage) override;
     int getAttackDamage();
     int getTrueDamage();
+
+    Character* selectTarget(vector<Enemy*> possibleTargets);
 
     void gainExperience(int exp);
     //TODO: Implement use object
