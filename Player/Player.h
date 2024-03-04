@@ -7,6 +7,7 @@
 #include "../Character/Character.h"
 #include "../Enemy/Enemy.h"
 #include <vector>
+#include "../Combat/Action.h"
 
 class Enemy;
 
@@ -23,7 +24,7 @@ public:
     void doAttack(Character *target) override;
     void takeDamage(int damage) override;
     Character* selectTarget(vector<Enemy*> possibleTargets);
-    void chooseAction();
+    Action takeAction(vector<Enemy*> enemies);
 
     void gainExperience(int exp);
     //TODO: Implement use object

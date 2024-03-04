@@ -90,12 +90,6 @@
 		<Unit filename="C:/Users/cbeww/Documents/TAREAS/POO/RPG/Character/Character.h">
 			<Option target="rpg"/>
 		</Unit>
-		<Unit filename="C:/Users/cbeww/Documents/TAREAS/POO/RPG/Combat/Combat.cpp">
-			<Option target="rpg"/>
-		</Unit>
-		<Unit filename="C:/Users/cbeww/Documents/TAREAS/POO/RPG/Combat/Combat.h">
-			<Option target="rpg"/>
-		</Unit>
 		<Unit filename="C:/Users/cbeww/Documents/TAREAS/POO/RPG/Enemy/Enemy.cpp">
 			<Option target="rpg"/>
 		</Unit>
